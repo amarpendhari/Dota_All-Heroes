@@ -1,0 +1,56 @@
+header {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+header img {
+  width: 80px;
+}
+header h2 {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+}
+.Dota-Heroes {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 20px;
+  justify-content: center;
+}
+.hero {
+  display: inline-block;
+  margin: 10px;
+  padding: 1.3rem;
+}
+.hero img {
+  height: 310px;
+  border-radius: 1.5em;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Dota-Heroes {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .Dota-Heroes {
+    grid-template-columns: auto auto;
+  }
+  .hero {
+    margin: 0;
+    padding: 0.6rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .Dota-Heroes {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  .hero {
+    margin: 10px;
+  }
+}
